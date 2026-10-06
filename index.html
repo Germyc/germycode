@@ -764,6 +764,29 @@
       font-size: 1.25rem;
       line-height: 1.4;
     }
+    .qr-share {
+      margin-top: 24px;
+      padding-top: 22px;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+    }
+    .qr-share img {
+      width: 148px;
+      height: auto;
+      padding: 10px;
+      background: #fff;
+      border-radius: 14px;
+      display: block;
+    }
+    .qr-share p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
 
     /* Footer */
     footer {
@@ -1228,6 +1251,10 @@
         <a href="https://maps.google.com/?q=Joaquin+V+Gonzalez+1837+Burzaco+Buenos+Aires" target="_blank" class="btn btn-outline" style="width:100%;">
           Abrir en Google Maps
         </a>
+        <div class="qr-share">
+          <img src="assets/QR-germycode.png" alt="Código QR con la dirección de GermyCode" width="300" height="300" loading="lazy">
+          <p>Escaneá para abrir esta web desde tu celular</p>
+        </div>
       </div>
     </div>
   </section>
