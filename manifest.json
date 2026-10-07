@@ -1,0 +1,23 @@
+{
+  "short_name": "GermyCode",
+  "name": "GermyCode | Diseño Web en Burzaco y Zona Sur",
+  "description": "Diseño web profesional en Burzaco y Zona Sur. Páginas rápidas, conversiones, tiendas online y landing pages para negocios locales con WhatsApp directo y SEO local.",
+  "icons": [
+    {
+      "src": "assets/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#07090e",
+  "display": "standalone",
+  "theme_color": "#07090e",
+  "lang": "es",
+  "dir": "ltr"
+}
