@@ -1,5 +1,5 @@
 const CACHE_NAME = 'germycode-v2';
-const OFFLINE_URL = '/index.html';
+const OFFLINE_URL = 'index.html';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
