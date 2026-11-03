@@ -1,9 +1,9 @@
-const CACHE_NAME = 'germycode-v5';
+const CACHE_NAME = 'germycode-v6';
 const OFFLINE_URLS = [
   './',
   './index.html',
-  './estilos.css?v=2.0.2',
-  './app.js?v=2.0.2',
+  './estilos.css?v=2.0.3',
+  './app.js?v=2.0.3',
   './manifest.json',
   './assets/logo-horizontal-transparent.png',
   './assets/fonts/plus-jakarta-sans-latin.woff2'
