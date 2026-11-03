@@ -54,8 +54,40 @@
   <!-- PWA: Manifest -->
   <link rel="manifest" href="./manifest.json">
 
+  <!-- PWA: Limpieza de cachés viejos y sincronización inmediata -->
+  <script>
+    if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          names.forEach(function(name) {
+            if (name !== 'germycode-v4') {
+              caches.delete(name);
+            }
+          });
+        });
+      }
+      navigator.serviceWorker.register('./sw.js').then(function(reg) {
+        reg.update();
+      }).catch(function() {});
+      var refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function() {
+        if (!refreshing) {
+          refreshing = true;
+          window.location.reload();
+        }
+      });
+      document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible') {
+          navigator.serviceWorker.getRegistration().then(function(reg) {
+            if (reg) reg.update();
+          });
+        }
+      });
+    }
+  </script>
+
   <!-- Estilos Nativos Zero-CDN del Sistema (Sección 4 Documento Maestro) -->
-  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="./estilos.css?v=2.0.1">
 
   <!-- Schema.org estructurado (JSON-LD) para SEO Local -->
   <script type="application/ld+json">
@@ -719,6 +751,6 @@
   </div>
 
   <!-- Script Lógico Vanilla JS (Offline & Zero-Dependencies) -->
-  <script src="./app.js"></script>
+  <script src="./app.js?v=2.0.1"></script>
 </body>
 </html>
