@@ -560,8 +560,10 @@ function updateDemoLinks(lang) {
     if (lang === 'es') {
       a.href = rawUrl;
     } else {
-      // Abre la URL externa directamente traducida por Google Translate
-      a.href = `https://translate.google.com/translate?sl=es&tl=${targetCode}&u=${encodeURIComponent(rawUrl)}`;
+      // Abre la URL externa directamente traducida por Google Translate propagando el idioma
+      const sep = rawUrl.includes('?') ? '&' : '?';
+      const targetWithLang = `${rawUrl}${sep}lang=${targetCode}`;
+      a.href = `https://translate.google.com/translate?sl=es&tl=${targetCode}&u=${encodeURIComponent(targetWithLang)}`;
     }
   });
 }
