@@ -780,8 +780,20 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
   initQrModal();
 
-  // Registro de Service Worker PWA (Offline)
+  // Registro y actualización automática del Service Worker PWA
   if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    navigator.serviceWorker.register('./sw.js').then((registration) => {
+      // Forzar verificación de nueva versión en cada inicio de la app
+      registration.update();
+    }).catch(() => {});
+
+    // Recargar automáticamente cuando el nuevo Service Worker toma el control
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!refreshing) {
+        refreshing = true;
+        window.location.reload();
+      }
+    });
   }
 });
