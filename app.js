@@ -25,6 +25,15 @@ const TRANSLATIONS = {
     nav_contact: "Contacto",
     nav_whatsapp: "WhatsApp Directo",
 
+    // Mobile Nav
+    mob_differentials: "Nuestros Diferenciales",
+    mob_services: "Servicios Locales",
+    mob_demos: "Demos en Vivo",
+    mob_calc: "Cotizar Online",
+    mob_compare: "GermyCode vs Agencias",
+    mob_faq: "Preguntas Frecuentes",
+    mob_contact: "Contacto y Ubicación",
+
     // Hero
     hero_badge: "Diseño Web para Negocios · Burzaco y Zona Sur",
     hero_title_1: "Diseño web en Burzaco para que tu negocio convierta visitas en ",
@@ -68,15 +77,15 @@ const TRANSLATIONS = {
     demo_c1_tag: "Demo · Presencia local",
     demo_c1_title: "Panadería El Maná",
     demo_c1_desc: "Horarios, ubicación en mapa, productos del día y contacto directo para pedidos y consultas. Un lanzamiento pensado para negocios de barrio.",
-    demo_c1_cta: "Ver demo en vivo ↗",
+    demo_c1_cta: "Ver demo Panadería ↗",
     demo_c2_tag: "Demo · Catálogo que consulta",
     demo_c2_title: "Almacén Doña Rosa",
     demo_c2_desc: "Categorías, fotos y precios con mensajes listos para WhatsApp. La solución ideal para comercios con stock variado que necesitan vender sin fricción.",
-    demo_c2_cta: "Ver demo en vivo ↗",
+    demo_c2_cta: "Ver demo Almacén ↗",
     demo_c3_tag: "Demo · Tienda online",
     demo_c3_title: "Almacén Doña Rosa · Tienda",
     demo_c3_desc: "Carrito, paso a paso de compra y flujo de venta digital. Un ejemplo de e-commerce ligero, claro y móvil-first para clientes recurrentes.",
-    demo_c3_cta: "Ver demo en vivo ↗",
+    demo_c3_cta: "Ver demo Tienda Online ↗",
     demo_c4_tag: "Antes / después",
     demo_c4_title: "Tu negocio hoy",
     demo_c4_desc: "Si ya tenés sitio o Google Business, te diagnosticamos qué falta: tráfico, claridad, CTA, mapa o mensajes de venta en una demo orientada a resultados.",
@@ -170,7 +179,7 @@ const TRANSLATIONS = {
 
     // Bottom App & Footer
     bot_home: "Inicio",
-    bot_services: "Servicios",
+    bot_services: "Planes",
     bot_calc: "Cotizar",
     bot_loc: "Ubicación",
     footer_tagline: "Diseño & Desarrollo Web de Alto Rendimiento",
@@ -188,6 +197,15 @@ const TRANSLATIONS = {
     nav_faq: "FAQ",
     nav_contact: "Contact",
     nav_whatsapp: "Direct WhatsApp",
+
+    // Mobile Nav
+    mob_differentials: "Our Differentials",
+    mob_services: "Local Services",
+    mob_demos: "Live Demos",
+    mob_calc: "Instant Quote",
+    mob_compare: "GermyCode vs Agencies",
+    mob_faq: "Frequently Asked Questions",
+    mob_contact: "Contact & Location",
 
     // Hero
     hero_badge: "High-Performance Web Design · Burzaco & South Zone",
@@ -232,15 +250,15 @@ const TRANSLATIONS = {
     demo_c1_tag: "Demo · Local Presence",
     demo_c1_title: "El Maná Bakery",
     demo_c1_desc: "Hours, map location, daily specials, and direct contact for orders and inquiries tailored for neighborhood stores.",
-    demo_c1_cta: "View Live Demo ↗",
+    demo_c1_cta: "Bakery Demo ↗",
     demo_c2_tag: "Demo · Inquiring Catalog",
     demo_c2_title: "Doña Rosa Grocery",
     demo_c2_desc: "Categories, photos, and prices with pre-filled WhatsApp messages. The ideal friction-free sales solution for inventory.",
-    demo_c2_cta: "View Live Demo ↗",
+    demo_c2_cta: "Grocery Demo ↗",
     demo_c3_tag: "Demo · Online Store",
     demo_c3_title: "Doña Rosa Store",
     demo_c3_desc: "Cart, step-by-step checkout, and seamless digital ordering flow. Lightweight mobile-first e-commerce for regular shoppers.",
-    demo_c3_cta: "View Live Demo ↗",
+    demo_c3_cta: "Online Store Demo ↗",
     demo_c4_tag: "Before / After",
     demo_c4_title: "Your Business Today",
     demo_c4_desc: "If you already have a site or Google Business profile, we diagnose what's missing: clarity, traffic, CTA, or sales messages in a results-driven audit.",
@@ -334,7 +352,7 @@ const TRANSLATIONS = {
 
     // Bottom App & Footer
     bot_home: "Home",
-    bot_services: "Services",
+    bot_services: "Plans",
     bot_calc: "Quote",
     bot_loc: "Location",
     footer_tagline: "High-Performance Web Design & Engineering",
@@ -352,6 +370,15 @@ const TRANSLATIONS = {
     nav_faq: "常见疑问",
     nav_contact: "联系我们",
     nav_whatsapp: "WhatsApp直连",
+
+    // Mobile Nav
+    mob_differentials: "核心优势",
+    mob_services: "本地服务",
+    mob_demos: "在线案例",
+    mob_calc: "在线测算",
+    mob_compare: "传统机构对比",
+    mob_faq: "常见解答",
+    mob_contact: "联络与地址",
 
     // Hero
     hero_badge: "商业高转化网站设计 · 布尔萨科与南部地区",
@@ -396,15 +423,15 @@ const TRANSLATIONS = {
     demo_c1_tag: "案例 · 本地实体",
     demo_c1_title: "El Maná 烘焙面包坊",
     demo_c1_desc: "营业时间、地图导航、每日主推与一键预订，专为本地街区实体店打造。",
-    demo_c1_cta: "查看在线案例 ↗",
+    demo_c1_cta: "查看烘焙店案例 ↗",
     demo_c2_tag: "案例 · 咨询型商品画册",
     demo_c2_title: "Doña Rosa 综合超市",
     demo_c2_desc: "按类别陈列高清图片与价格，一键生成 WhatsApp 询价清单，省去琐碎沟通。",
-    demo_c2_cta: "查看在线案例 ↗",
+    demo_c2_cta: "查看商超案例 ↗",
     demo_c3_tag: "案例 · 在线独立商城",
     demo_c3_title: "Doña Rosa 线上商城",
     demo_c3_desc: "购物车、结账步骤与数字下单流程，专为手机端优化的轻量独立电商。",
-    demo_c3_cta: "查看在线案例 ↗",
+    demo_c3_cta: "查看商城案例 ↗",
     demo_c4_tag: "改造前后对比",
     demo_c4_title: "您当前的业务诊断",
     demo_c4_desc: "如果您已有网站或谷歌商家主页，我们免费诊断转化瓶颈并提供改善方案。",
@@ -498,7 +525,7 @@ const TRANSLATIONS = {
 
     // Bottom App & Footer
     bot_home: "首页",
-    bot_services: "服务",
+    bot_services: "方案",
     bot_calc: "测算",
     bot_loc: "地址",
     footer_tagline: "高性能网页设计与开发",

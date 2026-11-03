@@ -60,7 +60,7 @@
       if ('caches' in window) {
         caches.keys().then(function(names) {
           names.forEach(function(name) {
-            if (name !== 'germycode-v6') {
+            if (name !== 'germycode-v7') {
               caches.delete(name);
             }
           });
@@ -87,7 +87,7 @@
   </script>
 
   <!-- Estilos Nativos Zero-CDN del Sistema (Sección 4 Documento Maestro) -->
-  <link rel="stylesheet" href="./estilos.css?v=2.0.3">
+  <link rel="stylesheet" href="./estilos.css?v=2.0.4">
 
   <!-- Schema.org estructurado (JSON-LD) para SEO Local -->
   <script type="application/ld+json">
@@ -247,13 +247,13 @@
 
     <!-- Menú Desplegable Móvil -->
     <div class="mobile-nav-menu" id="mobileNavMenu">
-      <a href="#diferenciales" aria-label="Sección Diferenciales" data-i18n="nav_differentials">Diferenciales</a>
-      <a href="#servicios-locales" aria-label="Sección Servicios de diseño" data-i18n="nav_services">Servicios</a>
-      <a href="#demos" aria-label="Sección Demos interactivas" data-i18n="nav_demos">Demos</a>
-      <a href="#cotizador" aria-label="Sección Cotizador online" data-i18n="nav_calc">Cotizador</a>
-      <a href="#comparativa" aria-label="Sección Comparativa técnica" data-i18n="nav_compare">Comparativa</a>
-      <a href="#preguntas-frecuentes" aria-label="Sección Preguntas frecuentes" data-i18n="nav_faq">FAQ</a>
-      <a href="#contacto" aria-label="Sección Contacto y ubicación" data-i18n="nav_contact">Contacto</a>
+      <a href="#diferenciales" data-i18n="mob_differentials">Nuestros Diferenciales</a>
+      <a href="#servicios-locales" data-i18n="mob_services">Servicios Locales</a>
+      <a href="#demos" data-i18n="mob_demos">Demos en Vivo</a>
+      <a href="#cotizador" data-i18n="mob_calc">Cotizar Online</a>
+      <a href="#comparativa" data-i18n="mob_compare">GermyCode vs Agencias</a>
+      <a href="#preguntas-frecuentes" data-i18n="mob_faq">Preguntas Frecuentes</a>
+      <a href="#contacto" data-i18n="mob_contact">Contacto y Ubicación</a>
     </div>
   </header>
 
@@ -376,21 +376,21 @@
         <span class="demo-tag" data-i18n="demo_c1_tag">Demo · Presencia local</span>
         <h3 data-i18n="demo_c1_title">Panadería El Maná</h3>
         <p data-i18n="demo_c1_desc">Horarios, ubicación en mapa, productos del día y contacto directo para pedidos y consultas. Un lanzamiento pensado para negocios de barrio.</p>
-        <a class="btn btn-outline demo-link" href="https://townshop-one.vercel.app/landing2/" data-original-href="https://townshop-one.vercel.app/landing2/" target="_blank" rel="noopener" data-i18n="demo_c1_cta">Ver demo en vivo ↗</a>
+        <a class="btn btn-outline demo-link" href="https://townshop-one.vercel.app/landing2/" data-original-href="https://townshop-one.vercel.app/landing2/" target="_blank" rel="noopener" data-i18n="demo_c1_cta">Ver demo Panadería ↗</a>
       </article>
 
       <article class="demo-card">
         <span class="demo-tag" data-i18n="demo_c2_tag">Demo · Catálogo que consulta</span>
         <h3 data-i18n="demo_c2_title">Almacén Doña Rosa</h3>
         <p data-i18n="demo_c2_desc">Categorías, fotos y precios con mensajes listos para WhatsApp. La solución ideal para comercios con stock variado que necesitan vender sin fricción.</p>
-        <a class="btn btn-outline demo-link" href="https://townshop-one.vercel.app/landing-demos/landing-1/" data-original-href="https://townshop-one.vercel.app/landing-demos/landing-1/" target="_blank" rel="noopener" data-i18n="demo_c2_cta">Ver demo en vivo ↗</a>
+        <a class="btn btn-outline demo-link" href="https://townshop-one.vercel.app/landing-demos/landing-1/" data-original-href="https://townshop-one.vercel.app/landing-demos/landing-1/" target="_blank" rel="noopener" data-i18n="demo_c2_cta">Ver demo Almacén ↗</a>
       </article>
 
       <article class="demo-card">
         <span class="demo-tag" data-i18n="demo_c3_tag">Demo · Tienda online</span>
         <h3 data-i18n="demo_c3_title">Almacén Doña Rosa · Tienda</h3>
         <p data-i18n="demo_c3_desc">Carrito, paso a paso de compra y flujo de venta digital. Un ejemplo de e-commerce ligero, claro y móvil-first para clientes recurrentes.</p>
-        <a class="btn btn-outline demo-link" href="https://townshop-one.vercel.app/landing-demos/landing-3/" data-original-href="https://townshop-one.vercel.app/landing-demos/landing-3/" target="_blank" rel="noopener" data-i18n="demo_c3_cta">Ver demo en vivo ↗</a>
+        <a class="btn btn-outline demo-link" href="https://townshop-one.vercel.app/landing-demos/landing-3/" data-original-href="https://townshop-one.vercel.app/landing-demos/landing-3/" target="_blank" rel="noopener" data-i18n="demo_c3_cta">Ver demo Tienda Online ↗</a>
       </article>
 
       <article class="demo-card">
@@ -699,7 +699,7 @@
     </a>
     <a href="#servicios-locales" class="bottom-nav-item" data-section="servicios">
       <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-      <span data-i18n="bot_services">Servicios</span>
+      <span data-i18n="bot_services">Planes</span>
     </a>
     <a href="#cotizador" class="bottom-nav-item" data-section="cotizador">
       <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
@@ -752,6 +752,6 @@
   </div>
 
   <!-- Script Lógico Vanilla JS (Offline & Zero-Dependencies) -->
-  <script src="./app.js?v=2.0.3"></script>
+  <script src="./app.js?v=2.0.4"></script>
 </body>
 </html>
